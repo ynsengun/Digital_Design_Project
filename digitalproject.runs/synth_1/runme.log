@@ -1,0 +1,783 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15632 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 358.461 ; gain = 99.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:102]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ClockDividerCount' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDividerCount' (2#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:65]
+INFO: [Synth 8-6157] synthesizing module 'ClockDividerDirection' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:84]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDividerDirection' (4#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:84]
+INFO: [Synth 8-6157] synthesizing module 'display_8x8' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/display_8x8.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'GND' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4945]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (5#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4945]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (6#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10001111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00101010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52076]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (8#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52076]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (8#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00010100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (8#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00010101010101010100000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10111010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (10#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0001010101010101010101010101010101000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (11#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b1111111111111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (12#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+	Parameter INIT bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b01111000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0111111110000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b01111111111111111000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111110000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000000000000100000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0000000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized4' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00001000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized5' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00000100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized6' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized7' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b00000001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized7' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000100000000111111111111111100000001000000000000000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized8' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10111000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized8' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0000000100010001111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized9' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b11111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized9' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized2' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25495]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111101111111111111111111111100000000100000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized5' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized10' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+	Parameter INIT bound to: 8'b10110100 
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized10' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25533]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b1111011100001000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+	Parameter INIT bound to: 16'b0000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25575]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b11011111111111110010000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized6' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111101010101011111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized6' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b01011101111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+	Parameter INIT bound to: 32'b11111111111111111101010111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25621]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized7' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b0111111111111111111111111111111111111111111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized7' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized8' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+	Parameter INIT bound to: 64'b1111111111111111111111111111111011111111111111101111111111111110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized8' (13#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25671]
+INFO: [Synth 8-6155] done synthesizing module 'display_8x8' (14#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/display_8x8.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'nextCollectLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextCollectLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'nextCollectLogic' (15#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextCollectLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'nextStateLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextStateLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'nextStateLogic' (16#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextStateLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'nextDirectionLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextDirectionLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'nextDirectionLogic' (17#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextDirectionLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'nextElevatorLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextElevatorLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'nextElevatorLogic' (18#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextElevatorLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'nextPassangerLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextPassangerLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'nextPassangerLogic' (19#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextPassangerLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'outputLogic' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'outputLogic' (20#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/SENGUN/Desktop/Modules/SevSeg_4digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/SENGUN/Desktop/Modules/SevSeg_4digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (21#1) [C:/Users/SENGUN/Desktop/Modules/SevSeg_4digit.sv:37]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register executed_reg in module top. This is not a recommended register style for Xilinx devices  [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:234]
+WARNING: [Synth 8-3848] Net image_green[0] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[1] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[2] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[3] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[4] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[5] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[6] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+WARNING: [Synth 8-3848] Net image_green[7] in module/entity top does not have driver. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'top' (22#1) [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:102]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.672 ; gain = 159.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.672 ; gain = 159.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 418.672 ; gain = 159.773
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'execute_IBUF'. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/constrs_1/new/constraints.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/constrs_1/new/constraints.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 756.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "nextCollect" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextCollect" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextDirection" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nextDirection" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "image_blue" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "image_red" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:288]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:294]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/top.sv:300]
+WARNING: [Synth 8-327] inferring latch for variable 'nextCollect_reg' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextCollectLogic.sv:36]
+WARNING: [Synth 8-327] inferring latch for variable 'nextDirection_reg' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextDirectionLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'nextElevator_reg' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextElevatorLogic.sv:40]
+WARNING: [Synth 8-327] inferring latch for variable 'nextPassanger_reg' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextPassangerLogic.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_reg' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/nextPassangerLogic.sv:47]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[0]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[1]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[2]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[2]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[2]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[2]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[3]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[3]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[3]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[3]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[4]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[4]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[4]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[4]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[5]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[5]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[5]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[5]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[6]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[6]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[6]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[6]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[7]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:524]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[7]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:338]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[7]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:204]
+WARNING: [Synth 8-327] inferring latch for variable 'image_red_reg[7]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[0]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[1]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[2]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[3]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[4]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[5]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[6]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'image_blue_reg[7]' [C:/Users/SENGUN/Desktop/digitalproject/digitalproject.srcs/sources_1/new/outputLogic.sv:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 4     
+	   4 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 10    
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	   4 Input      8 Bit        Muxes := 7     
+	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 17    
+	   4 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 54    
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 9     
+	   7 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	  13 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 8     
+	   4 Input      3 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module ClockDividerCount 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module nextCollectLogic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 10    
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+Module nextStateLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module nextDirectionLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+Module nextElevatorLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 3     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module nextPassangerLogic 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 3     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module outputLogic 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 13    
+	   4 Input      8 Bit        Muxes := 7     
+	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 47    
+	   4 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 9     
+	   7 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	  13 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "ccc/nextCollect" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/image_red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/image_red" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/image_red" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ooo/image_blue" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ddd/nextDirection" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[2][1] )
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][2]' (LD) to 'ooo/image_blue_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][2]' (LD) to 'ooo/image_blue_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][2]' (LD) to 'ooo/image_blue_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][2]' (LD) to 'ooo/image_blue_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][2]' (LD) to 'ooo/image_blue_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[2][2]' (LD) to 'ooo/image_blue_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][3]' (LD) to 'ooo/image_blue_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][3]' (LD) to 'ooo/image_blue_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][3]' (LD) to 'ooo/image_blue_reg[4][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][3]' (LD) to 'ooo/image_blue_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][3]' (LD) to 'ooo/image_blue_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[2][3]' (LD) to 'ooo/image_blue_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][4]' (LD) to 'ooo/image_blue_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][4]' (LD) to 'ooo/image_blue_reg[5][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][4]' (LD) to 'ooo/image_blue_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][4]' (LD) to 'ooo/image_blue_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][4]' (LD) to 'ooo/image_blue_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[2][4]' (LD) to 'ooo/image_blue_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][5]' (LD) to 'ooo/image_blue_reg[6][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][5]' (LD) to 'ooo/image_blue_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][5]' (LD) to 'ooo/image_blue_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][5]' (LD) to 'ooo/image_blue_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][5]' (LD) to 'ooo/image_blue_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[2][5]' (LD) to 'ooo/image_blue_reg[7][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][6]' (LD) to 'ooo/image_blue_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][6]' (LD) to 'ooo/image_blue_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][6]' (LD) to 'ooo/image_blue_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][6]' (LD) to 'ooo/image_blue_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][6]' (LD) to 'ooo/image_blue_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[2][6]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[7][7]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[6][7]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[5][7]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[4][7]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_blue_reg[3][7]' (LD) to 'ooo/image_blue_reg[2][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_blue_reg[2][7] )
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[7][0]' (LDC) to 'ooo/image_red_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[6][0]' (LDC) to 'ooo/image_red_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[5][0]' (LDC) to 'ooo/image_red_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[4][0]' (LDC) to 'ooo/image_red_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[3][0]' (LDC) to 'ooo/image_red_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[2][0]' (LDC) to 'ooo/image_red_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[7][1]' (LDC) to 'ooo/image_red_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[6][1]' (LDC) to 'ooo/image_red_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[5][1]' (LDC) to 'ooo/image_red_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[4][1]' (LDC) to 'ooo/image_red_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'ooo/image_red_reg[3][1]' (LDC) to 'ooo/image_red_reg[2][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ooo/image_red_reg[2][1] )
+WARNING: [Synth 8-3332] Sequential element (eee/nextElevator_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (eee/nextElevator_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (eee/nextElevator_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ppp/nextPassanger_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[0][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[1][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[0][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[1][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[2][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[2][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[3][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[4][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[4][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[5][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[5][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[6][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[6][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[7][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[7][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_blue_reg[2][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ooo/image_red_reg[2][1]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 756.332 ; gain = 497.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 772.078 ; gain = 513.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    27|
+|3     |LUT1   |    11|
+|4     |LUT2   |    39|
+|5     |LUT3   |    69|
+|6     |LUT4   |    83|
+|7     |LUT5   |    44|
+|8     |LUT6   |    96|
+|9     |MUXF7  |     9|
+|10    |FDCE   |    43|
+|11    |FDPE   |     3|
+|12    |FDRE   |   157|
+|13    |LD     |    26|
+|14    |LDC    |     3|
+|15    |LDCP   |    22|
+|16    |IBUF   |     9|
+|17    |OBUF   |    39|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------------+------+
+|      |Instance              |Module                |Cells |
++------+----------------------+----------------------+------+
+|1     |top                   |                      |   683|
+|2     |  display_8x8_0       |display_8x8           |   130|
+|3     |  SevSeg_4digit_inst0 |SevSeg_4digit         |    39|
+|4     |  ccc                 |nextCollectLogic      |    43|
+|5     |  clk                 |ClockDivider          |    68|
+|6     |  clock_count         |ClockDividerCount     |    50|
+|7     |  clock_direction     |ClockDividerDirection |    32|
+|8     |  ddd                 |nextDirectionLogic    |    10|
+|9     |  ooo                 |outputLogic           |   112|
+|10    |  ppp                 |nextPassangerLogic    |    31|
++------+----------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 779.746 ; gain = 183.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 779.746 ; gain = 520.848
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  LD => LDCE: 26 instances
+  LDC => LDCE: 3 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+208 Infos, 109 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 779.746 ; gain = 533.855
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SENGUN/Desktop/digitalproject/digitalproject.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 779.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 23 20:51:17 2018...

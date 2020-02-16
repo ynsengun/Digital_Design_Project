@@ -1,0 +1,114 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Dec 23 20:52:04 2018
+| Host         : DESKTOP-DGVECIE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    45 |
+| Unused register locations in slices containing registers |   188 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           27 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            7 |
+|     10 |            1 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             208 |           50 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |             130 |           19 |
+| Yes          | No                    | No                     |              58 |            5 |
+| Yes          | No                    | Yes                    |              88 |           19 |
+| Yes          | Yes                   | No                     |              20 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+|            Clock Signal           |              Enable Signal              |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+|  ooo/image_red_reg[5][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[7][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[2][7]_i_1_n_0  |                                         | ooo/image_red_reg[7][7]_i_1_n_0   |                1 |              2 |
+|  ooo/image_red_reg[2][5]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/p_1_out[5]                   |                                         | ooo/image_red_reg[7][5]_i_1_n_0   |                1 |              2 |
+|  ooo/image_red_reg[6][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[4][7]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[5][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[4][5]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[4][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[5][5]/G0       |                                         |                                   |                1 |              2 |
+|  execute_IBUF_BUFG                |                                         | reset_IBUF                        |                1 |              2 |
+|  clk/CLK_BUFG                     |                                         | execute_IBUF_BUFG                 |                1 |              2 |
+|  clk/CLK_BUFG                     |                                         | reset_IBUF                        |                1 |              2 |
+|  ooo/image_red_reg[5][7]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[7][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[6][5]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[6][7]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[6][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[2][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[3][5]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[3][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[2][7]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[3][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[2][6]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[4][4]/G0       |                                         |                                   |                1 |              2 |
+|  ooo/image_red_reg[3][7]/G0       |                                         |                                   |                1 |              2 |
+|  ddd/nextDirection_reg[1]_i_2_n_0 |                                         |                                   |                1 |              4 |
+|  ppp/tmp_reg[2]_i_2_n_0           |                                         |                                   |                2 |              6 |
+|  clk/CLK_BUFG                     | passanger[3]_i_1_n_0                    | reset_IBUF                        |                3 |              8 |
+|  clock_count/CLK                  | in00                                    | reset_IBUF                        |                2 |              8 |
+|  clock_direction/CLK              | in30                                    | reset_IBUF                        |                2 |              8 |
+|  clk/CLK_BUFG                     | passanger[11]_i_1_n_0                   | reset_IBUF                        |                2 |              8 |
+|  clk/CLK_BUFG                     | passanger[7]_i_1_n_0                    | reset_IBUF                        |                2 |              8 |
+|  clock_count/CLK                  | in2                                     | reset_IBUF                        |                1 |              8 |
+|  clock_count/CLK                  | in1                                     | reset_IBUF                        |                1 |              8 |
+|  clk_in_IBUF_BUFG                 | display_8x8_0/bit_sent_count[4]_i_1_n_0 |                                   |                1 |             10 |
+|  ccc/nextCollect_reg[8]_i_2_n_0   |                                         |                                   |                4 |             18 |
+|  clk_in_IBUF_BUFG                 | display_8x8_0/clk_en_slow               | display_8x8_0/op_count[9]_i_1_n_0 |                4 |             20 |
+|  ooo/image_red_reg[2][3]_i_2_n_0  |                                         |                                   |                4 |             24 |
+|  clk/CLK_BUFG                     | collect                                 | reset_IBUF                        |                6 |             32 |
+|  clk_in_IBUF_BUFG                 | display_8x8_0/color_data[0]_i_1_n_0     |                                   |                4 |             48 |
+|  clk_in_IBUF_BUFG                 |                                         | clock_count/clear                 |                8 |             62 |
+|  clk_in_IBUF_BUFG                 |                                         | clk/clk_out_reg_i_1_n_0           |                8 |             62 |
+|  clk_in_IBUF_BUFG                 |                                         |                                   |               17 |            112 |
++-----------------------------------+-----------------------------------------+-----------------------------------+------------------+----------------+
+
+
